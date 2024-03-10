@@ -1,0 +1,54 @@
+{
+  "name": "@cwos/package-name",
+  "version": "0.0.9",
+  "description": "A detailed description",
+  "main": "dist/index.js",
+  "bin": {
+    "package-name": "dist/index.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint *.ts",
+    "format": "eslint *.ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreoWis/git-repo.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+   "add",
+   "your",
+   "tags",
+   "here"
+  ],
+  "author": "author",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreoWis/git-repo/issues"
+  },
+  "homepage": "https://github.com/CreoWis/git-repo#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@types/prompts": "^2.4.9",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "kleur": "^3.0.3",
+    "undici-types": "^5.26.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
